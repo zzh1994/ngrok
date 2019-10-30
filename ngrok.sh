@@ -57,12 +57,12 @@ install_go(){
 		if [ ! -f $SELFPATH/go1.7.6.linux-amd64.tar.gz ];then
 			wget https://gomirrors.org/dl/go/go1.13.3.linux-amd64.tar.gz --no-check-certificate
 		fi
-	    tar zxvf go1.7.6.linux-amd64.tar.gz
+	    tar zxvf go1.13.3.linux-amd64.tar.gz
 	else
 		if [ ! -f $SELFPATH/go1.7.6.linux-386.tar.gz ];then
 			wget https://gomirrors.org/dl/go/go1.13.3.linux-386.tar.gz --no-check-certificate
 		fi
-	    tar zxvf go1.7.6.linux-386.tar.gz
+	    tar zxvf go1.13.3.linux-386.tar.gz
 	fi
 	mv go /usr/local/
 	ln -s /usr/local/go/bin/* /usr/bin/
